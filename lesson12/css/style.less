@@ -1,0 +1,47 @@
+.modal{
+    width: 500px;
+    height: 500px;
+    background: blueviolet;
+    border-radius: 50%;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%) translateY(-130%);
+    display: none;
+    &:target{
+        display: block;
+        transform: translateX(-50%) translateY(0%);
+    }
+    &-close{
+        position: absolute;
+        top: 0;
+        right: 0;
+        text-decoration: none;
+        font-size: 68px;
+        color: black;
+    }
+    &-form{
+        left: 22%;
+        top: 20%;
+        position: fixed;
+        p{
+            text-align: center;
+            text-transform: uppercase;
+            color: white;
+            font-weight: 600;
+        }
+        input{
+            padding: 10px 60px;
+            background:white;
+            border: 1px solid white;
+            color: black;
+        }
+        .send{
+            margin-top: 20px;
+            padding: 10px 124px;
+            background: black;
+            border: 1px;
+            color: white;
+            text-transform: uppercase;
+        }
+    }
+}
