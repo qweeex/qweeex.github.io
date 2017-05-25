@@ -1,0 +1,234 @@
+@font-face {
+			font-family: "LatoRegular";
+			src: url("../fonts/LatoRegular/LatoRegular.eot");
+			src: url("../fonts/LatoRegular/LatoRegular.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/LatoRegular/LatoRegular.woff") format("woff"),
+			url("../fonts/LatoRegular/LatoRegular.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+@font-face {
+			font-family: "LatoLight";
+			src: url("../fonts/LatoLight/LatoLight.eot");
+			src: url("../fonts/LatoLight/LatoLight.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/LatoLight/LatoLight.woff") format("woff"),
+			url("../fonts/LatoLight/LatoLight.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+}
+@font-face {
+			font-family: "LatoBold";
+			src: url("../fonts/LatoBold/LatoBold.eot");
+			src: url("../fonts/LatoBold/LatoBold.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/LatoBold/LatoBold.woff") format("woff"),
+			url("../fonts/LatoBold/LatoBold.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+.bold{
+    font-family: "LatoBold";
+}
+.light{
+    font-family: "LatoLight";
+}
+.reg{
+	font-family: "LatoRegular";
+}
+.label{
+    h1{
+        .light;
+        color:  #999999;
+        font-size: 34px;/* Приближение из-за подстановки шрифтов */
+        text-transform: uppercase;
+        text-align: left;
+    }
+}
+header{
+    .phone_number{
+        float: right;
+        text-align: center;
+        h1{
+            .bold;
+            color:  #000000;
+            font-size: 24px;
+            text-align: left;
+        }
+        a{
+            color: red;
+            text-align: left;
+            font-size: 15px;
+            .reg;
+            text-decoration: none;
+            span{
+                border-bottom: 2px solid red;
+            }
+            &:hover{
+                border-bottom: 2px solid red;                
+            }
+        }
+    }
+    .menu{
+        padding-top: 38px;
+        li{
+            margin: 5px;
+        }
+        a{
+        text-transform: uppercase;
+        color: black;
+        text-decoration: none;
+        .reg;
+        &:hover{
+            border-bottom: 2px solid red;
+        }
+        &:active{
+            background: #ff0000;
+            color: #ffffff;
+            padding: 2px;
+        }
+        }
+    }
+}
+section#info_slide{
+    background: url(../img/slide1.jpg) center no-repeat;
+    background-size: cover;
+    height: 416px;
+    .title{
+        h2{
+            text-align: center;
+        color:  #ffffff;
+        font-size: 63px;
+        .reg;
+        text-transform: uppercase;
+        margin-top: 336px;
+        }
+    }
+}
+section#nav{
+    margin-top: 28px;
+    margin-bottom: 100px;
+    text-align: center;
+    a{
+        font-size: 24px;
+        .reg;
+        color: black;
+        text-decoration: none;
+        &:hover{
+            border-bottom: 2px solid red;
+        }
+    }
+    li{
+        margin-right: 45px;
+    }
+}
+section#history{
+    .history-info-text{
+        h1{
+            font-family: Lato;
+            color:  #9a9a9a;
+            font-size: 34px;
+            .light;
+            text-transform: uppercase;
+            margin-bottom: 67px;
+        }
+        p{
+            .reg;
+            color:  #000000;
+            font-size: 16px;/* Приближение из-за подстановки шрифтов */
+            text-align: justify;
+        }
+        button{
+            .light;
+            font-size: 19px;
+            color: #000000;
+            width: 265px;
+            height: 40px;
+            border: 1px solid red;
+            text-transform: uppercase;
+            background: transparent;
+            a{
+              color: #000000;
+            text-decoration: none;
+
+            }
+        }
+    }
+}
+section#skills{
+    .skills4{
+        margin-left: -14px;
+    }
+    .skills2,
+    .skills6{
+        img{
+            padding-top: 24px;
+        }
+    }
+}
+section#partners{
+    .company{
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}
+section#reviews{
+    .rew{
+        background: red;
+        width: 376px;
+        height: 252px;
+    }
+}
+section#open-jobs{
+    margin-bottom: 74px;
+    .open-jobs-info{
+        h3{
+            color:  #ff0000;
+            font-size: 23px;
+            .light;
+        }
+        p{
+            padding-bottom: 10px;
+            text-align: justify;
+            border-bottom: 2px solid red;
+        }
+    }
+}
+footer{
+    border-top: 1px solid black;
+    p{
+        padding-top: 24px;
+    }
+    a{
+        color: black;
+        text-decoration: none;
+        border-bottom: 1px solid black;
+    }
+}
+@media (max-width: 768px) {
+.logo{
+    img{
+    width: 124px;
+    height: 85px;
+    }
+}
+.menu{
+    font-size: 8px;
+}
+.phone_number{
+    h1{
+        font-size: 18px;
+    }
+    a{
+        font-size: 10px;
+    }
+}
+}
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
