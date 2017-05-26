@@ -297,7 +297,7 @@
             </div>
         </div>
     </footer>
-</body>
+    <script src="js/jquery-3.2.1.min.js"></script>
     <script>
              var show;
             function hidetxt(type){
@@ -307,6 +307,18 @@
             param.style.display = "block";
         show = param;
         }else param.style.display = "none"
-    }
+            };
+            $(document).ready(function(){
+            var link = $('.menu-link');
+            var link_active = $('menu-link_active');
+
+            link.click(function(){
+                link.toggleClass('menu-link_active');
+            });
+            link_active.click(function(){
+                link.removeClass('menu-link_active');
+            });
+        });
     </script>
+</body>
 </html>
