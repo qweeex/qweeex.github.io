@@ -47,7 +47,34 @@ header{
     height: 184px;
     .logo{
         .menu{
-            display: none;
+            &-link{
+                display: block;
+                width: 50px;
+                height: 50px;
+                position: fixed;
+                top: 20px;
+                left: 20px;
+                span, span:before, span:after{
+                    display: block;
+                    height: 2px;
+                    width: 16px;
+                    background-color: red;
+                    position: absolute;
+                    top: 50%;
+                    margin-top: -1px;
+                    margin-left: -10px;
+                }
+                span:before{
+                    margin-top: -5px;
+                    content: '';
+                    margin-left: 0;
+                }
+                span:after{
+                    margin-top: 3px;
+                    content: '';
+                    margin-left: 0;
+                }
+            }
         }
         margin-top: 6px;
     }
@@ -473,7 +500,7 @@ section#open-jobs{
 }
 }
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: 350px) and (max-width: 767px) {
+@media (min-width: 310px) and (max-width: 767px) {
 header{
     height: 83px;
     .logo{
@@ -533,7 +560,6 @@ section#history{
         }
         button{
             margin-top: 0px;
-            transform: translateX(50%);
             width: 220px;
             height: 31px;
             font-size: 17px;
