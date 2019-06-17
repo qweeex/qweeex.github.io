@@ -2,6 +2,8 @@
   padding-top: 45px;
   &-nav{
     width: 100%;
+    position: relative;
+    z-index: 10;
     &__container{
       display: flex;
       justify-content: space-between;
@@ -11,6 +13,12 @@
       color: white;
       font-size: 21px;
       font-family: @FuturaFuturisLightC;
+      text-decoration: none;
+      transition: all 0.5s;
+      &:hover{
+        color: @yellow;
+        text-decoration: none;
+      }
     }
   }
   &-phone{
@@ -33,6 +41,12 @@
         position: relative;
         left: -22px;
         top: -6px;
+      }
+      text-decoration: none;
+      transition: all 0.5s;
+      &:hover{
+        color: @yellow;
+        text-decoration: none;
       }
     }
   }

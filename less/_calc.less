@@ -37,8 +37,18 @@
 }
 .calc{
   &-count{
-    padding-top: 363px;
+    padding-top: 150px;
+    position: sticky;
+    top: 100px;
     &__val{
+      position: relative;
+      &:after{
+        content: url("../img/calc/param.png");
+        position: absolute;
+        bottom: -30px;
+        right: 37px;
+        z-index: -1;
+      }
       p{
         font-size: 49px;
         line-height: 1;
@@ -52,6 +62,13 @@
       }
     }
     &__btn{
+      position: relative;
+      &:before{
+        content: url("../img/calc/mask2.png");
+        position: absolute;
+        top: -55px;
+        right: -10px;
+      }
       button{
         padding: .7rem 3rem;
         border: 1px solid #e4cd27;
@@ -132,6 +149,105 @@
             width: 40px;
             opacity: 0;
             transition: all 0.4s;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 560px) {
+  html{
+    overflow-x: hidden;
+  }
+  .header{
+    &-nav{
+      display: none;
+    }
+    &-phone{
+      a{
+        font-size: 19px;
+        &:before{
+          left: -10px;
+          top: 0px;
+        }
+      }
+    }
+    &-calc{
+      &:after{
+        bottom: -15px;
+        opacity: .3;
+      }
+      padding-top: 70px;
+      &__title{
+        font-size: 36px;
+      }
+      &__desc{
+        padding-top: 32px;
+        font-size: 16px;
+      }
+    }
+  }
+  .calc{
+    &-count{
+      position: fixed;
+      bottom: 0;
+      top: auto;
+      background: #000;
+      z-index: 15;
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      left: 0;
+      border-top: 1px solid @yellow;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      &__val{
+        width: 55%;
+        display: flex;
+        align-items: center;
+        padding-left: 5px;
+        justify-content: ;
+        p{
+          font-size: 25px;
+          margin: 0;
+          span{
+            font-size: 40px;
+          }
+        }
+        &:after{
+          display: none;
+        }
+      }
+      &__btn{
+        width: 45%;
+        display: flex;
+        align-items: center;
+        padding-right: 5px;
+        &:before{
+          display: none;
+        }
+        button{
+          border: 1px solid #e4cd27;
+          background: #e4cd27;
+          margin-left: auto;
+          display: block;
+          margin-right: auto;
+          margin-top: 0;
+          font-size: 16px;
+          font-family: 'Conv_futurafuturislightc';
+          width: 100%;
+          padding: 6px;
+        }
+      }
+    }
+    &-content{
+      padding-top: 80px;
+      padding-left: 20px;
+      padding-right: 20px;
+      .calc-checkbox__item{
+        .item-title{
+          p{
+            font-size: 21px;
           }
         }
       }
