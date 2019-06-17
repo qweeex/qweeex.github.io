@@ -1,0 +1,71 @@
+
+.camAnimate{
+  .elem3{
+    transition: all 0.4s;
+    animation: camLine1  2s infinite ease-in-out;
+  }
+  .elem4{
+    transition: all 0.4s;
+    animation: camLine1  4s infinite ease-in-out;
+  }
+  .elem2{
+    transition: all 0.4s;
+    animation: camLine3  4s infinite ease-in-out;
+  }
+  .elem1{
+    transition: all 0.4s;
+    animation: camLine2  4s infinite ease-in-out;
+  }
+}
+
+.active{
+  .icon-1{
+    transition: all 0.4s;
+    animation: adv1 4s  ease-in-out;
+  }
+}
+
+@keyframes adv1 {
+  from{
+    transform: translateX(-200px) translateY(-155px);
+    opacity: 0;
+  }
+  to{
+    transform: translateX(0px) translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes camLine1 {
+  from{
+    transform: translateY(100px);
+  }
+  50%{
+    transform: translateY(0px);
+  }
+  to{
+    transform: translateY(100px);
+  }
+}
+@keyframes camLine2 {
+  from{
+    transform: translateX(0px);
+  }
+  50%{
+    transform: translateX(-55px);
+  }
+  to{
+    transform: translateX(0px);
+  }
+}
+@keyframes camLine3 {
+  from{
+    transform: translateX(5px) translateY(-0px);
+  }
+  50%{
+    transform: translateX(-40px) translateY(-15px);
+  }
+  to{
+    transform: translateX(5px) translateY(-0px);
+  }
+}

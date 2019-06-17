@@ -1,0 +1,43 @@
+// Шрифты
+@import "_fonts";
+// Анимации
+@import "_animates";
+// Главная страница
+@import "_mainpage";
+// Страница видеомаркетинга
+@import "_videomark";
+// Страница калькулятора
+@import "_calc";
+// Страница видео для бизнеса
+@import "_videoforbusness";
+// Страница контактов
+@import "_contact";
+
+
+// Color base
+@yellow: #f8dd2a;
+@black: #000000;
+@grey: #5c5c5c;
+
+.opacity{
+  transition: opacity 0.4s;
+  opacity: 0.4 !important;
+}
+
+body{
+  background: #030303;
+  color: white;
+  font-family: @FuturaMediumCTT;
+  max-width: 1920px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  //overflow-y: hidden;
+}
+input, button, textarea{
+  &:focus{
+    outline: 0;
+  }
+}
+.container {
+  max-width: 1206px;
+}

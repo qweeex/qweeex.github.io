@@ -1,0 +1,140 @@
+.header{
+  &-calc{
+    padding-top: 174px;
+    padding-left: 10px;
+    position: relative;
+    &::before{
+      content: url("/img/calc/mask.png");
+      position: absolute;
+      left: 6px;
+      z-index: -1;
+      top: 138px;
+    }
+    &::after{
+      content: url("/img/calc/calcBg.png");
+      position: absolute;
+      right: -44%;
+      z-index: -1;
+      bottom: -15px;
+    }
+    &__title{
+      font-size: 113px;
+      line-height: 0.8;
+      text-transform: uppercase;
+      font-family: @FuturaFuturisCBold;
+      span{
+        letter-spacing: 3px;
+        text-transform: lowercase;
+        font-family: @FuturaMediumCTT;
+      }
+    }
+    &__desc{
+      padding-top: 80px;
+      font-size: 34px;
+      line-height: 1.2;
+    }
+  }
+}
+.calc{
+  &-count{
+    padding-top: 363px;
+    &__val{
+      p{
+        font-size: 49px;
+        line-height: 1;
+        text-transform: lowercase;
+        font-family: @FuturaFuturisCBold;
+        span{
+          font-size: 80px;
+          line-height: 0.8;
+          text-transform: uppercase;
+        }
+      }
+    }
+    &__btn{
+      button{
+        padding: .7rem 3rem;
+        border: 1px solid #e4cd27;
+        background: #e4cd27;
+        margin-left: auto;
+        display: block;
+        margin-right: auto;
+        margin-top: 56px;
+        font-size: 19px;
+        font-family: @FuturaFuturisLightC;
+      }
+    }
+  }
+  &-content{
+    padding-top: 162px;
+    padding-left: 74px;
+    &__range{
+      label{
+        font-size: 30px;
+        padding-bottom: 7px;
+      }
+    }
+  }
+  &-checkboxView{
+    hr{
+      border-bottom: 1px solid @grey;
+    }
+  }
+  &-checkbox{
+    padding-top: 100px;
+    &__title{
+      p{
+        text-transform: uppercase;
+        font-size: 30px;
+        font-family: @FuturaFuturisCBold;
+        color: @yellow;
+      }
+    }
+    &__item{
+      display: flex;
+      justify-content: space-between;
+      padding-top: 22px;
+      .item-title{
+        p{
+          font-size: 27px;
+          line-height: 1;
+          margin: 0;
+        }
+        .desc{
+          padding-top: 10px;
+          font-size: 16px;
+          color: @grey;
+          line-height: 1.1;
+          font-family: @FuturaFuturisLightC;
+        }
+      }
+      .item-checkbox{
+        input{
+          display: none;
+        }
+        input[type="checkbox"]:checked + label{
+          span{
+            opacity: 1;
+          }
+        }
+        label{
+          background: transparent;
+          border: 2px solid #5c5c5c;
+          width: 37px;
+          height: 30px;
+          display: flex;
+          content: '';
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          span{
+            content: url("/img/icon/check box_Монтажная область 1.svg");
+            width: 40px;
+            opacity: 0;
+            transition: all 0.4s;
+          }
+        }
+      }
+    }
+  }
+}
