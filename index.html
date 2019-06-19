@@ -11,15 +11,20 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="/js/jquery.onepage-scroll.min.js"></script>
     <script src="/js/common.js"></script>
+    <script src="/js/animation.js"></script>
 </head>
 <body>
     <div class="wrapper">
         <section class="header">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-8">
+                    <div class="col-xl-8 col-4">
                         <div class="header-nav">
+                            <a href="#" class="d-block d-sm-none header-nav_mobile">
+                                <span></span>
+                            </a>
                             <nav class="header-nav__container">
+                                <a href="/" class="header-nav__link">Главная</a>
                                 <a href="/videomarketeng.html" class="header-nav__link">Видеомаркетинг</a>
                                 <a href="/videobisness.html" class="header-nav__link">Видео для бизнеса</a>
                                 <a href="/#2" class="header-nav__link">О нас</a>
@@ -28,7 +33,7 @@
                             </nav>
                         </div>
                     </div>
-                    <div class="col-xl-4">
+                    <div class="col-xl-4 col-8">
                         <div class="header-phone">
                             <a href="" class="header-phone__tel">+7 906 318 53 06</a>
                         </div>
@@ -37,7 +42,7 @@
             </div>
             <div class="container-full">
                 <div class="row">
-                    <div class="col-xl-4">
+                    <div class="col-xl-4 d-none d-sm-block">
                         <div class="header-cam">
                             <div class="header-cam__bg">
                                 <img src="/img/red/redBg.png" alt="">
@@ -53,7 +58,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4">
+                    <div class="col-xl-4 col-12">
                         <div class="header-logo">
                             <p><span>студия</span><br>корпоративного<br>видео и рекламы</p>
                         </div>
@@ -62,7 +67,7 @@
                             <button class="header-btn__button btn-right"><p>Видеомаркетинг</p></button>
                         </div>
                     </div>
-                    <div class="col-xl-4">
+                    <div class="col-xl-4 d-none d-sm-block">
                         <div class="header-analytic">
                             <div class="header-analytic__bg">
                                 <img src="/img/analytic/analyticBg.png" alt="">
@@ -88,6 +93,7 @@
                 <div class="row">
                     <div class="col-xl-3">
                         <div class="about-title">
+                            <span class="mask"></span>
                             <h2>
                                 <span>0</span>
                                 нас
@@ -117,6 +123,9 @@
                 </div>
                 <div class="row">
                     <div class="col-xl-9">
+                        <div class="about-dots">
+                            <img src="/img/about/dots.png" class="about-dots_img" alt="">
+                        </div>
                         <div class="about-circle">
                             <div class="about-circle__item">
                                 <img src="/img/about/circleDots.png" alt="">
@@ -135,7 +144,7 @@
         <section class="steps">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-7">
+                    <div class="col-xl-7 col-12 order-2 order-sm-0">
                         <div class="steps-list">
                             <div class="steps-list__item">
                                 <div class="item_title">
@@ -172,7 +181,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-5">
+                    <div class="col-xl-5 col-12 order-0 order-sm-2">
                         <div class="steps-title">
                             <h2>Этапы<br><span>работы</span></h2>
                             <div class="steps-title__pram">
@@ -184,10 +193,10 @@
             </div>
         </section>
         <section class="callback">
-            <div class="callback-bg"></div>
+            <div class="callback-bg d-sm-block d-none"></div>
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-8">
+                    <div class="col-xl-8 col-12">
                         <div class="callback-content">
                             <div class="callback-content__title">
                                 <p>Заполните<br>бриф</p>
@@ -208,14 +217,14 @@
         <section class="advanture">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-12">
+                    <div class="col-xl-12 col-12">
                         <div class="advanture-title">
-                            <h2>Преймущества</h2>
+                            <h2>Преимущества</h2>
                         </div>
                     </div>
                 </div>
                 <div class="row adv-list">
-                    <div class="col-xl-12">
+                    <div class="col-xl-12 col-12">
                         <div class="advanture-content">
                             <div class="advanture-content__icon icon-1">
                                 <img src="/img/icon/Экономия%20времени-01.svg" alt="">
@@ -231,7 +240,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-12">
+                    <div class="col-xl-12 col-12">
                         <div class="advanture-content">
                             <div class="advanture-content__icon icon-2">
                                 <img src="/img/icon/Эскизы-03-01.svg" alt="">
@@ -248,7 +257,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-12">
+                    <div class="col-xl-12 col-12">
                         <div class="advanture-content">
                             <div class="advanture-content__icon icon-3">
                                 <img src="/img/icon/Deadline-02-01.svg" alt="">
@@ -264,7 +273,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-12">
+                    <div class="col-xl-12 col-12">
                         <div class="advanture-content">
                             <div class="advanture-content__icon icon-4">
                                 <img src="/img/icon/video-01-01.svg" alt="">
@@ -280,7 +289,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-12">
+                    <div class="col-xl-12 col-12">
                         <div class="advanture-content">
                             <div class="advanture-content__icon icon-5">
                                 <img src="/img/icon/idea-01.svg" alt="">

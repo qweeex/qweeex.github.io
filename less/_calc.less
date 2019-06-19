@@ -156,12 +156,49 @@
   }
 }
 @media (max-width: 560px) {
-  html{
-    overflow-x: hidden;
+  .container{
+    max-width: 100%;
   }
   .header{
     &-nav{
-      display: none;
+      &_mobile{
+        span{
+          width: 15px;
+          height: 15px;
+          background: @yellow;
+          content: '';
+          display: block;
+          border-radius: 35px;
+          position: relative;
+          margin-left: 30px;
+          cursor: pointer;
+          &:before{
+            position: absolute;
+            left: -20px;
+            top: 0;
+            width: 15px;
+            height: 15px;
+            background: @yellow;
+            content: '';
+            display: block;
+            border-radius: 35px;
+          }
+          &:after{
+            position: absolute;
+            right: -20px;
+            top: 0;
+            width: 15px;
+            height: 15px;
+            background: @yellow;
+            content: '';
+            display: block;
+            border-radius: 35px;
+          }
+        }
+      }
+      nav{
+        display: none;
+      }
     }
     &-phone{
       a{
@@ -252,5 +289,48 @@
         }
       }
     }
+  }
+  .calc-content__range label {
+    font-size: 20px;
+    padding-bottom: 7px;
+    line-height: 1.1;
+  }
+  .calc-checkbox__title p {
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #f8dd2a;
+  }
+  .calc-checkbox__item .item-title .desc {
+    padding-top: 10px;
+    font-size: 13px !important;
+    color: #5c5c5c;
+    line-height: 1.1;
+  }
+  .footer-content__title p {
+    font-size: 40px;
+    letter-spacing: 1px;
+    margin: 0;
+    line-height: 1;
+  }
+  .footer-content__subtitle p {
+    font-size: 17px;
+    margin: 0;
+    padding-top: 5px;
+  }
+  .footer-content__phone p {
+    font-size: 31px;
+    margin: 0;
+    margin-top: -10px;
+  }
+  .footer-form__input {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  .footer-form__button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
   }
 }

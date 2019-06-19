@@ -137,3 +137,42 @@ body{
     }
   }
 }
+@media (max-width: 560px) {
+  .header{
+    &-markImg{
+      display: none;
+    }
+    &-mark{
+      &:after{
+        bottom: -15px;
+        opacity: .3;
+      }
+      padding-top: 110px;
+      &__title{
+        font-size: 60px;
+      }
+      &__desc{
+        padding-top: 32px;
+        font-size: 16px;
+      }
+    }
+  }
+  .contentMark-info {
+    padding-top: 150px;
+  }
+  .tarif-card{
+    margin-bottom: 50px;
+  }
+  .tarif-card__list {
+    padding-top: 20px;
+    min-height: auto;
+  }
+  .tarif-card__price {
+    padding-top: 0;
+  }
+  .tarif .card-3 .tarif-card__title h3 {
+    text-align: right !important;
+    position: relative;
+    right: -14px;
+  }
+}

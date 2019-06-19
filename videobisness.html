@@ -8,18 +8,24 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/ion.RangeSlider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="/js/common.js"></script>
+    <script src="js/common.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
 </head>
 <body>
     <div class="wrapper">
         <section class="header">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-8">
+                    <div class="col-xl-8 col-4">
                         <div class="header-nav">
+                            <a href="#" class="d-block d-sm-none header-nav_mobile">
+                                <span></span>
+                            </a>
                             <nav class="header-nav__container">
+                                <a href="/" class="header-nav__link">Главная</a>
                                 <a href="/videomarketeng.html" class="header-nav__link">Видеомаркетинг</a>
                                 <a href="/videobisness.html" class="header-nav__link">Видео для бизнеса</a>
                                 <a href="/#2" class="header-nav__link">О нас</a>
@@ -28,7 +34,7 @@
                             </nav>
                         </div>
                     </div>
-                    <div class="col-xl-4">
+                    <div class="col-xl-4 col-8">
                         <div class="header-phone">
                             <a href="" class="header-phone__tel">+7 906 318 53 06</a>
                         </div>
@@ -85,11 +91,24 @@
                         <div class="col-xl-6">
                             <div class="busn-item_slider">
                                 <div class="slider-arrow">
-                                    <span class="slider-arrow_prev"></span>
-                                    <span class="slider-arrow_next"></span>
+                                    <span class="slider-arrow_prev" id="prev1"></span>
+                                    <span class="slider-arrow_next" id="next1"></span>
                                 </div>
-                                <div class="slider-wrapper">
-                                    <img src="img/busnvideo/slide.png" alt="">
+                                <div class="slider-wrapper swiper-container" id="slide1">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="img/busnvideo/slide.png" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="img/busnvideo/slide.png" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="img/busnvideo/slide.png" alt="">
+                                        </div>
+                                    </div>
+                                    <!-- If we need navigation buttons -->
+                                    <div class="swiper-button-prev swiper-button-prev1"></div>
+                                    <div class="swiper-button-next swiper-button-next1"></div>
                                 </div>
                             </div>
                         </div>
@@ -136,14 +155,27 @@
             <div class="busn-item reverse">
                 <div class="container">
                     <div class="row">
-                        <div class="col-xl-6">
+                        <div class="col-xl-6 order-sm-0 order-2">
                             <div class="busn-item_slider">
-                                <div class="slider-wrapper">
-                                    <img src="img/busnvideo/slide.png" alt="">
+                                <div class="slider-wrapper swiper-container" id="slide2">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="img/busnvideo/slide.png" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="img/busnvideo/slide.png" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="img/busnvideo/slide.png" alt="">
+                                        </div>
+                                    </div>
+                                    <!-- If we need navigation buttons -->
+                                    <div class="swiper-button-prev swiper-button-prev2"></div>
+                                    <div class="swiper-button-next swiper-button-next2"></div>
                                 </div>
                                 <div class="slider-arrow ml-2">
-                                    <span class="slider-arrow_prev"></span>
-                                    <span class="slider-arrow_next"></span>
+                                    <span class="slider-arrow_prev" id="prev2"></span>
+                                    <span class="slider-arrow_next" id="next2"></span>
                                 </div>
                             </div>
                         </div>
@@ -218,11 +250,24 @@
                         <div class="col-xl-6">
                             <div class="busn-item_slider">
                                 <div class="slider-arrow">
-                                    <span class="slider-arrow_prev"></span>
-                                    <span class="slider-arrow_next"></span>
+                                    <span class="slider-arrow_prev" id="prev3"></span>
+                                    <span class="slider-arrow_next" id="next3"></span>
                                 </div>
-                                <div class="slider-wrapper">
-                                    <img src="img/busnvideo/slide.png" alt="">
+                                <div class="slider-wrapper swiper-container" id="slide3">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="img/busnvideo/slide.png" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="img/busnvideo/slide.png" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="img/busnvideo/slide.png" alt="">
+                                        </div>
+                                    </div>
+                                    <!-- If we need navigation buttons -->
+                                    <div class="swiper-button-prev swiper-button-prev3"></div>
+                                    <div class="swiper-button-next swiper-button-next3"></div>
                                 </div>
                             </div>
                         </div>

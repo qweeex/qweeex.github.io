@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/ion.RangeSlider.css">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="/js/common.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/calc.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
 </head>
 <body>
@@ -19,7 +20,11 @@
                 <div class="row">
                     <div class="col-xl-8 col-4">
                         <div class="header-nav">
+                            <a href="#" class="d-block d-sm-none header-nav_mobile">
+                                <span></span>
+                            </a>
                             <nav class="header-nav__container">
+                                <a href="/" class="header-nav__link">Главная</a>
                                 <a href="/videomarketeng.html" class="header-nav__link">Видеомаркетинг</a>
                                 <a href="/videobisness.html" class="header-nav__link">Видео для бизнеса</a>
                                 <a href="/#2" class="header-nav__link">О нас</a>
@@ -35,7 +40,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xl-12">
+                    <div class="col-xl-10 col-12">
                         <div class="header-calc">
                             <h1 class="header-calc__title">
                                 калькулятор<br>
@@ -53,21 +58,21 @@
         <section class="calc">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-4 col-12">
+                    <div class="col-xl-4 ">
                         <div class="calc-count">
                             <div class="calc-count__val">
-                                <p><span>150 000</span><br>рублей</p>
+                                <p><span id="priceVal">0</span><br>рублей</p>
                             </div>
                             <div class="calc-count__btn">
                                 <button>Оставить заявку</button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-8 col-12">
+                    <div class="col-xl-8 ">
                         <div class="calc-content">
                             <div class="calc-content__range">
                                 <label>Какой хронометраж ролика вам нужен?</label>
-                                <input type="text" class="js-range-slider">
+                                <input type="text" class="js-range-slider videotime">
                             </div>
                             <div class="calc-checkbox">
                                 <div class="calc-checkbox__title">
@@ -78,8 +83,8 @@
                                         <p>Разработка концепции и идеи</p>
                                     </div>
                                     <div class="item-checkbox">
-                                        <input type="checkbox" checked>
-                                        <label for="">
+                                        <input type="checkbox" id="idea">
+                                        <label for="idea">
                                             <span></span>
                                         </label>
                                     </div>
@@ -89,8 +94,8 @@
                                         <p>Сценарий</p>
                                     </div>
                                     <div class="item-checkbox">
-                                        <input type="checkbox">
-                                        <label for="">
+                                        <input type="checkbox" id="scenarii">
+                                        <label for="scenarii">
                                             <span></span>
                                         </label>
                                     </div>
@@ -100,8 +105,8 @@
                                         <p>Закадровый текст</p>
                                     </div>
                                     <div class="item-checkbox">
-                                        <input type="checkbox">
-                                        <label for="">
+                                        <input type="checkbox" id="text">
+                                        <label for="text">
                                             <span></span>
                                         </label>
                                     </div>
@@ -111,8 +116,8 @@
                                         <p>Раскадровка</p>
                                     </div>
                                     <div class="item-checkbox">
-                                        <input type="checkbox">
-                                        <label for="">
+                                        <input type="checkbox" id="frames">
+                                        <label for="frames">
                                             <span></span>
                                         </label>
                                     </div>
@@ -124,8 +129,8 @@
                                             сценария и складывается исходя из количества сцен</p>
                                     </div>
                                     <div class="item-checkbox">
-                                        <input type="checkbox">
-                                        <label for="">
+                                        <input type="checkbox" id="location">
+                                        <label for="location">
                                             <span></span>
                                         </label>
                                     </div>
@@ -138,29 +143,35 @@
                                 <div class="row">
                                     <div class="col-xl-5">
                                         <div class="calc-checkbox__item">
-                                            <div class="item-checkbox">
-                                                <input type="checkbox" checked>
-                                                <label for="">
-                                                    <span></span>
-                                                </label>
-                                            </div>
-                                            <div class="item-title">
-                                                <p>Оплата по часам</p>
+                                            <div class="row">
+                                                <div class="col-2">
+                                                    <div class="item-checkbox">
+                                                        <input type="checkbox" id="hours">
+                                                        <label for="hours">
+                                                            <span></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-9 col-10">
+                                                    <div class="item-title">
+                                                        <p>Оплата по часам</p>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-xl-5">
                                         <div class="calc-checkbox__item">
                                             <div class="row">
-                                                <div class="col-3">
+                                                <div class="col-2">
                                                     <div class="item-checkbox">
-                                                        <input type="checkbox" checked>
-                                                        <label for="">
+                                                        <input type="checkbox" id="smena">
+                                                        <label for="smena">
                                                             <span></span>
                                                         </label>
                                                     </div>
                                                 </div>
-                                                <div class="col-9">
+                                                <div class="col-xl-9 col-10">
                                                     <div class="item-title">
                                                         <p class="mb-0">Оплата по сменам</p>
                                                         <p class="desc">смена - 8ч.</p>
@@ -173,15 +184,15 @@
                                 <hr>
                                 <div class="calc-checkbox__item">
                                     <div class="row">
-                                        <div class="col-1">
+                                        <div class="col-xl-1 col-2">
                                             <div class="item-checkbox">
-                                                <input type="checkbox" checked>
-                                                <label for="">
+                                                <input type="checkbox" id="operator">
+                                                <label for="operator">
                                                     <span></span>
                                                 </label>
                                             </div>
                                         </div>
-                                        <div class="col-9">
+                                        <div class="col-xl-9 col-10">
                                             <div class="item-title">
                                                 <p>Оператор</p>
                                                 <p class="desc">Универсальный специалист, камера Sony a6500/a7III,
@@ -192,15 +203,15 @@
                                 </div>
                                 <div class="calc-checkbox__item">
                                     <div class="row">
-                                        <div class="col-1">
+                                        <div class="col-xl-1 col-2">
                                             <div class="item-checkbox">
-                                                <input type="checkbox" checked>
-                                                <label for="">
+                                                <input type="checkbox" id="opergroup">
+                                                <label for="opergroup">
                                                     <span></span>
                                                 </label>
                                             </div>
                                         </div>
-                                        <div class="col-9">
+                                        <div class="col-xl-9 col-10">
                                             <div class="item-title">
                                                 <p>Операторская группа</p>
                                                 <p class="desc">2 оператора, камеры Sony a6500/a7III, электронный стедикам, штативы,
@@ -211,15 +222,15 @@
                                 </div>
                                 <div class="calc-checkbox__item">
                                     <div class="row">
-                                        <div class="col-1">
+                                        <div class="col-xl-1 col-2">
                                             <div class="item-checkbox">
-                                                <input type="checkbox" checked>
-                                                <label for="">
+                                                <input type="checkbox" id="videogroup">
+                                                <label for="videogroup">
                                                     <span></span>
                                                 </label>
                                             </div>
                                         </div>
-                                        <div class="col-9">
+                                        <div class="col-xl-9 col-10">
                                             <div class="item-title">
                                                 <p>Съемочная группа</p>
                                                 <p class="desc">2 оператора, камеры Sony a6500/a7III, электронный стедикам, штативы,
@@ -232,7 +243,7 @@
                             </div>
                             <div class="calc-content__range pt-5">
                                 <label>Количество съемочных смен (часов)</label>
-                                <input type="text" class="js-range-slider">
+                                <input type="text" class="js-range-slider hoursLine">
                             </div>
                             <div class="calc-checkboxView pt-5">
                                 <div class="calc-checkbox__title pt-2">
@@ -240,15 +251,15 @@
                                 </div>
                                 <div class="calc-checkbox__item">
                                     <div class="row w-100">
-                                        <div class="col-1">
+                                        <div class="col-xl-1 col-2">
                                             <div class="item-checkbox">
-                                                <input type="checkbox" checked>
-                                                <label for="">
+                                                <input type="checkbox" id="aerorec">
+                                                <label for="aerorec">
                                                     <span></span>
                                                 </label>
                                             </div>
                                         </div>
-                                        <div class="col-9">
+                                        <div class="col-xl-9 col-10">
                                             <div class="item-title">
                                                 <p>Аэросъемка</p>
                                             </div>
@@ -256,15 +267,15 @@
                                     </div>
                                 </div>
                                 <div class="calc-content__range">
-                                    <input type="text" class="js-range-slider">
+                                    <input type="text" class="js-range-slider aeroslider">
                                 </div>
                                 <div class="calc-content__range pt-5">
                                     <label>Стилист (проработка образа актеров и персонажей)</label>
-                                    <input type="text" class="js-range-slider">
+                                    <input type="text" class="js-range-slider stylistslider">
                                 </div>
                                 <div class="calc-content__range pt-5">
                                     <label>Гример</label>
-                                    <input type="text" class="js-range-slider">
+                                    <input type="text" class="js-range-slider grimerslider">
                                 </div>
                             </div>
                             <div class="calc-checkboxView pt-5">
@@ -273,15 +284,15 @@
                                 </div>
                                 <div class="calc-checkbox__item">
                                     <div class="row w-100">
-                                        <div class="col-1">
+                                        <div class="col-xl-1 col-2">
                                             <div class="item-checkbox">
-                                                <input type="checkbox" checked>
-                                                <label for="">
+                                                <input type="checkbox" id="montag">
+                                                <label for="montag">
                                                     <span></span>
                                                 </label>
                                             </div>
                                         </div>
-                                        <div class="col-9">
+                                        <div class="col-xl-9 col-10">
                                             <div class="item-title">
                                                 <p>Монтаж</p>
                                                 <p class="desc">Черновая склейка отснятого материала</p>
@@ -291,15 +302,15 @@
                                 </div>
                                 <div class="calc-checkbox__item">
                                     <div class="row w-100">
-                                        <div class="col-1">
+                                        <div class="col-xl-1 col-2">
                                             <div class="item-checkbox">
-                                                <input type="checkbox" checked>
-                                                <label for="">
+                                                <input type="checkbox" id="colorpicker">
+                                                <label for="colorpicker">
                                                     <span></span>
                                                 </label>
                                             </div>
                                         </div>
-                                        <div class="col-9">
+                                        <div class="col-xl-9 col-10">
                                             <div class="item-title">
                                                 <p>Цветокоррекция (colorgrading)</p>
                                                 <p class="desc">Регулировка цветовых составляющих с целью изменения
@@ -310,15 +321,15 @@
                                 </div>
                                 <div class="calc-checkbox__item">
                                     <div class="row w-100">
-                                        <div class="col-1">
+                                        <div class="col-xl-1 col-2">
                                             <div class="item-checkbox">
-                                                <input type="checkbox" checked>
-                                                <label for="">
+                                                <input type="checkbox" id="infografic">
+                                                <label for="infografic">
                                                     <span></span>
                                                 </label>
                                             </div>
                                         </div>
-                                        <div class="col-9">
+                                        <div class="col-xl-9 col-10">
                                             <div class="item-title">
                                                 <p>Инфографика</p>
                                                 <p class="desc">Разработка инфографических составляющих</p>
@@ -327,19 +338,19 @@
                                     </div>
                                 </div>
                                 <div class="calc-content__range pb-4">
-                                    <input type="text" class="js-range-slider">
+                                    <input type="text" class="js-range-slider infograficslider">
                                 </div>
                                 <div class="calc-checkbox__item">
                                     <div class="row w-100">
-                                        <div class="col-1">
+                                        <div class="col-xl-1 col-2">
                                             <div class="item-checkbox">
-                                                <input type="checkbox" checked>
-                                                <label for="">
+                                                <input type="checkbox" id="grafic">
+                                                <label for="grafic">
                                                     <span></span>
                                                 </label>
                                             </div>
                                         </div>
-                                        <div class="col-9">
+                                        <div class="col-xl-9 col-10">
                                             <div class="item-title">
                                                 <p>3D графика</p>
                                                 <p class="desc">Создание VFX и моделирование.
@@ -350,15 +361,15 @@
                                 </div>
                                 <div class="calc-checkbox__item">
                                     <div class="row w-100">
-                                        <div class="col-1">
+                                        <div class="col-xl-1 col-2">
                                             <div class="item-checkbox">
-                                                <input type="checkbox" checked>
-                                                <label for="">
+                                                <input type="checkbox" id="sounddesign">
+                                                <label for="sounddesign">
                                                     <span></span>
                                                 </label>
                                             </div>
                                         </div>
-                                        <div class="col-9">
+                                        <div class="col-xl-9 col-10">
                                             <div class="item-title">
                                                 <p>Саунддизайн</p>
                                                 <p class="desc">Настройка звуковой дорожки видео, добавление звуковых
@@ -369,15 +380,15 @@
                                 </div>
                                 <div class="calc-checkbox__item">
                                     <div class="row w-100">
-                                        <div class="col-1">
+                                        <div class="col-xl-1 col-2">
                                             <div class="item-checkbox">
-                                                <input type="checkbox" checked>
-                                                <label for="">
+                                                <input type="checkbox" id="musiclicence">
+                                                <label for="musiclicence">
                                                     <span></span>
                                                 </label>
                                             </div>
                                         </div>
-                                        <div class="col-9">
+                                        <div class="col-xl-9 col-10">
                                             <div class="item-title">
                                                 <p>Приобретение лицензионного
                                                     музыкального сопровождения</p>
@@ -388,15 +399,15 @@
                                 </div>
                                 <div class="calc-checkbox__item">
                                     <div class="row w-100">
-                                        <div class="col-1">
+                                        <div class="col-xl-1 col-2">
                                             <div class="item-checkbox">
-                                                <input type="checkbox" checked>
-                                                <label for="">
+                                                <input type="checkbox" id="voice">
+                                                <label for="voice">
                                                     <span></span>
                                                 </label>
                                             </div>
                                         </div>
-                                        <div class="col-9">
+                                        <div class="col-xl-9 col-10">
                                             <div class="item-title">
                                                 <p>Дикторский голос</p>
                                             </div>
