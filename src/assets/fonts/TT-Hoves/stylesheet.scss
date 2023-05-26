@@ -1,0 +1,240 @@
+@font-face {
+    font-family: 'TT Hoves Hairline';
+    src: url('../../fonts/TT-Hoves/TTHoves-HairlineItalic.eot');
+    src: local('TT Hoves Hairline Italic'), local('../../fonts/TT-Hoves/TTHoves-HairlineItalic'),
+        url('../../fonts/TT-Hoves/TTHoves-HairlineItalic.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/TT-Hoves/TTHoves-HairlineItalic.woff2') format('woff2'),
+        url('../../fonts/TT-Hoves/TTHoves-HairlineItalic.woff') format('woff'),
+        url('../../fonts/TT-Hoves/TTHoves-HairlineItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Hoves';
+    src: url('../../fonts/TT-Hoves/TTHoves-ExtraLightItalic.eot');
+    src: local('TT Hoves ExtraLight Italic'), local('../../fonts/TT-Hoves/TTHoves-ExtraLightItalic'),
+        url('../../fonts/TT-Hoves/TTHoves-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/TT-Hoves/TTHoves-ExtraLightItalic.woff2') format('woff2'),
+        url('../../fonts/TT-Hoves/TTHoves-ExtraLightItalic.woff') format('woff'),
+        url('../../fonts/TT-Hoves/TTHoves-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Hoves';
+    src: url('../../fonts/TT-Hoves/TTHoves-Thin.eot');
+    src: local('TT Hoves Thin'), local('../../fonts/TT-Hoves/TTHoves-Thin'),
+        url('../../fonts/TT-Hoves/TTHoves-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/TT-Hoves/TTHoves-Thin.woff2') format('woff2'),
+        url('../../fonts/TT-Hoves/TTHoves-Thin.woff') format('woff'),
+        url('../../fonts/TT-Hoves/TTHoves-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Hoves';
+    src: url('../../fonts/TT-Hoves/TTHoves-DemiBold.eot');
+    src: local('TT Hoves DemiBold'), local('../../fonts/TT-Hoves/TTHoves-DemiBold'),
+        url('../../fonts/TT-Hoves/TTHoves-DemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/TT-Hoves/TTHoves-DemiBold.woff2') format('woff2'),
+        url('../../fonts/TT-Hoves/TTHoves-DemiBold.woff') format('woff'),
+        url('../../fonts/TT-Hoves/TTHoves-DemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Hoves';
+    src: url('../../fonts/TT-Hoves/TTHoves-BoldItalic.eot');
+    src: local('TT Hoves Bold Italic'), local('../../fonts/TT-Hoves/TTHoves-BoldItalic'),
+        url('../../fonts/TT-Hoves/TTHoves-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/TT-Hoves/TTHoves-BoldItalic.woff2') format('woff2'),
+        url('../../fonts/TT-Hoves/TTHoves-BoldItalic.woff') format('woff'),
+        url('../../fonts/TT-Hoves/TTHoves-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Hoves';
+    src: url('../../fonts/TT-Hoves/TTHoves-Black.eot');
+    src: local('TT Hoves Black'), local('../../fonts/TT-Hoves/TTHoves-Black'),
+        url('../../fonts/TT-Hoves/TTHoves-Black.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/TT-Hoves/TTHoves-Black.woff2') format('woff2'),
+        url('../../fonts/TT-Hoves/TTHoves-Black.woff') format('woff'),
+        url('../../fonts/TT-Hoves/TTHoves-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Hoves';
+    src: url('../../fonts/TT-Hoves/TTHoves-ExtraLight.eot');
+    src: local('TT Hoves ExtraLight'), local('../../fonts/TT-Hoves/TTHoves-ExtraLight'),
+        url('../../fonts/TT-Hoves/TTHoves-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/TT-Hoves/TTHoves-ExtraLight.woff2') format('woff2'),
+        url('../../fonts/TT-Hoves/TTHoves-ExtraLight.woff') format('woff'),
+        url('../../fonts/TT-Hoves/TTHoves-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Hoves';
+    src: url('../../fonts/TT-Hoves/TTHoves-Bold.eot');
+    src: local('TT Hoves Bold'), local('../../fonts/TT-Hoves/TTHoves-Bold'),
+        url('../../fonts/TT-Hoves/TTHoves-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/TT-Hoves/TTHoves-Bold.woff2') format('woff2'),
+        url('../../fonts/TT-Hoves/TTHoves-Bold.woff') format('woff'),
+        url('../../fonts/TT-Hoves/TTHoves-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Hoves';
+    src: url('../../fonts/TT-Hoves/TTHoves-ThinItalic.eot');
+    src: local('TT Hoves Thin Italic'), local('../../fonts/TT-Hoves/TTHoves-ThinItalic'),
+        url('../../fonts/TT-Hoves/TTHoves-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/TT-Hoves/TTHoves-ThinItalic.woff2') format('woff2'),
+        url('../../fonts/TT-Hoves/TTHoves-ThinItalic.woff') format('woff'),
+        url('../../fonts/TT-Hoves/TTHoves-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Hoves';
+    src: url('../../fonts/TT-Hoves/TTHoves-Italic.eot');
+    src: local('TT Hoves Italic'), local('../../fonts/TT-Hoves/TTHoves-Italic'),
+        url('../../fonts/TT-Hoves/TTHoves-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/TT-Hoves/TTHoves-Italic.woff2') format('woff2'),
+        url('../../fonts/TT-Hoves/TTHoves-Italic.woff') format('woff'),
+        url('../../fonts/TT-Hoves/TTHoves-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Hoves';
+    src: url('../../fonts/TT-Hoves/TTHoves-BlackItalic.eot');
+    src: local('TT Hoves Black Italic'), local('../../fonts/TT-Hoves/TTHoves-BlackItalic'),
+        url('../../fonts/TT-Hoves/TTHoves-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/TT-Hoves/TTHoves-BlackItalic.woff2') format('woff2'),
+        url('../../fonts/TT-Hoves/TTHoves-BlackItalic.woff') format('woff'),
+        url('../../fonts/TT-Hoves/TTHoves-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Hoves';
+    src: url('../../fonts/TT-Hoves/TTHoves-ExtraBold.eot');
+    src: local('TT Hoves ExtraBold'), local('../../fonts/TT-Hoves/TTHoves-ExtraBold'),
+        url('../../fonts/TT-Hoves/TTHoves-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/TT-Hoves/TTHoves-ExtraBold.woff2') format('woff2'),
+        url('../../fonts/TT-Hoves/TTHoves-ExtraBold.woff') format('woff'),
+        url('../../fonts/TT-Hoves/TTHoves-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Hoves';
+    src: url('../../fonts/TT-Hoves/TTHoves-DemiBoldItalic.eot');
+    src: local('TT Hoves DemiBold Italic'), local('../../fonts/TT-Hoves/TTHoves-DemiBoldItalic'),
+        url('../../fonts/TT-Hoves/TTHoves-DemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/TT-Hoves/TTHoves-DemiBoldItalic.woff2') format('woff2'),
+        url('../../fonts/TT-Hoves/TTHoves-DemiBoldItalic.woff') format('woff'),
+        url('../../fonts/TT-Hoves/TTHoves-DemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Hoves';
+    src: url('../../fonts/TT-Hoves/TTHoves-MediumItalic.eot');
+    src: local('TT Hoves Medium Italic'), local('../../fonts/TT-Hoves/TTHoves-MediumItalic'),
+        url('../../fonts/TT-Hoves/TTHoves-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/TT-Hoves/TTHoves-MediumItalic.woff2') format('woff2'),
+        url('../../fonts/TT-Hoves/TTHoves-MediumItalic.woff') format('woff'),
+        url('../../fonts/TT-Hoves/TTHoves-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Hoves';
+    src: url('../../fonts/TT-Hoves/TTHoves-ExtraBoldItalic.eot');
+    src: local('TT Hoves ExtraBold Italic'), local('../../fonts/TT-Hoves/TTHoves-ExtraBoldItalic'),
+        url('../../fonts/TT-Hoves/TTHoves-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/TT-Hoves/TTHoves-ExtraBoldItalic.woff2') format('woff2'),
+        url('../../fonts/TT-Hoves/TTHoves-ExtraBoldItalic.woff') format('woff'),
+        url('../../fonts/TT-Hoves/TTHoves-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Hoves';
+    src: url('../../fonts/TT-Hoves/TTHoves-Regular.eot');
+    src: local('TT Hoves Regular'), local('../../fonts/TT-Hoves/TTHoves-Regular'),
+        url('../../fonts/TT-Hoves/TTHoves-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/TT-Hoves/TTHoves-Regular.woff2') format('woff2'),
+        url('../../fonts/TT-Hoves/TTHoves-Regular.woff') format('woff'),
+        url('../../fonts/TT-Hoves/TTHoves-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Hoves Hairline';
+    src: url('../../fonts/TT-Hoves/TTHoves-Hairline.eot');
+    src: local('TT Hoves Hairline'), local('../../fonts/TT-Hoves/TTHoves-Hairline'),
+        url('../../fonts/TT-Hoves/TTHoves-Hairline.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/TT-Hoves/TTHoves-Hairline.woff2') format('woff2'),
+        url('../../fonts/TT-Hoves/TTHoves-Hairline.woff') format('woff'),
+        url('../../fonts/TT-Hoves/TTHoves-Hairline.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Hoves';
+    src: url('../../fonts/TT-Hoves/TTHoves-LightItalic.eot');
+    src: local('TT Hoves Light Italic'), local('../../fonts/TT-Hoves/TTHoves-LightItalic'),
+        url('../../fonts/TT-Hoves/TTHoves-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/TT-Hoves/TTHoves-LightItalic.woff2') format('woff2'),
+        url('../../fonts/TT-Hoves/TTHoves-LightItalic.woff') format('woff'),
+        url('../../fonts/TT-Hoves/TTHoves-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Hoves';
+    src: url('../../fonts/TT-Hoves/TTHoves-Light.eot');
+    src: local('TT Hoves Light'), local('../../fonts/TT-Hoves/TTHoves-Light'),
+        url('../../fonts/TT-Hoves/TTHoves-Light.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/TT-Hoves/TTHoves-Light.woff2') format('woff2'),
+        url('../../fonts/TT-Hoves/TTHoves-Light.woff') format('woff'),
+        url('../../fonts/TT-Hoves/TTHoves-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Hoves';
+    src: url('../../fonts/TT-Hoves/TTHoves-Medium.eot');
+    src: local('TT Hoves Medium'), local('../../fonts/TT-Hoves/TTHoves-Medium'),
+        url('../../fonts/TT-Hoves/TTHoves-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/TT-Hoves/TTHoves-Medium.woff2') format('woff2'),
+        url('../../fonts/TT-Hoves/TTHoves-Medium.woff') format('woff'),
+        url('../../fonts/TT-Hoves/TTHoves-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
