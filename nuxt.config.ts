@@ -3,7 +3,7 @@ import {defineNuxtConfig} from "nuxt/config";
 
 export default defineNuxtConfig({
     srcDir: 'src/',
-    ssr: true,
+    ssr: false,
     css: [
       '@/assets/style/reset.scss',
       '@/assets/fonts/TT-Hoves/stylesheet.scss'
